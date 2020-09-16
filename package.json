@@ -1,0 +1,36 @@
+{
+  "name": "s3-path",
+  "version": "1.0.0",
+  "description": "Node.js Path-like methods for dealing with S3 keys",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha && xo"
+  },
+  "author": "Russell Schick <rschick@bellwoods.ca>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^8.1.3",
+    "should": "^13.2.3",
+    "xo": "^0.33.1"
+  },
+  "xo": {
+    "envs": [
+      "node",
+      "mocha"
+    ],
+    "space": true,
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ]
+    }
+  },
+  "mocha": {
+    "require": "should"
+  }
+}
