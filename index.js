@@ -17,9 +17,14 @@ function resolve(...paths) {
   return resolved.slice(1);
 }
 
+function join(...parts) {
+  return path.posix.join(...parts);
+}
+
 module.exports = {
   basename,
   dirname,
   extname,
+  join,
   resolve,
 };

@@ -40,4 +40,14 @@ describe('s3-path', () => {
       path.resolve('base/dir/file.ext', '../file2.ext').should.equal('base/dir/file2.ext');
     });
   });
+
+  describe('join', () => {
+    it('should join parts', () => {
+      path.join('base', 'dir', 'dir2').should.equal('base/dir/dir2');
+    });
+
+    it('should add trailing slashes', () => {
+      path.join('base', 'dir', '/').should.equal('base/dir/');
+    });
+  });
 });
